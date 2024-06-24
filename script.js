@@ -4,15 +4,18 @@ const counterInput = document.getElementById('counter-input')
 let counter = 0
 
 function addBtn() {
-    counter = counter+1
-    counterMultiple = parseInt(counter * counterInput.value)
-    countingDiv.innerText = counterMultiple;
+           
+    plus = Number(counterInput.value);
+    console.log(plus);
+    counter = counter+plus
+    countingDiv.innerText = counter;
+
 }
 
 function lessBtn() {
-    counter = counter-1
-    counterMultiple = parseInt(counter * counterInput.value)
-    countingDiv.innerText = counterMultiple;
+    plus = parseInt(counterInput.value);
+    counter = counter-plus
+    countingDiv.innerText = counter;
 }
 
 function resetBtn() {
